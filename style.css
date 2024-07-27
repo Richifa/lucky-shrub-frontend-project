@@ -1,0 +1,155 @@
+/* Override default browser setings */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* Background styles */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: rgba(110, 110, 87, 0.5);
+    background-image: url(images/back1.JPG); /* Background image */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+/* Navigation bar style*/
+.navbar{
+    width: 85%;
+    padding: 35px 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li  {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.navbar ul li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #02a01c;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+/* Text action styles */
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+    text-align: center;
+    background-color:  #4c6e3a;  /* Example light background color */
+    color: white;
+    max-width: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust the shadow properties as needed */
+    /* Add border radius */
+    border-radius: 20px;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin: 20px 40px 10px; 
+}
+
+.content p {
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
+}
+
+/* Button */
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px  10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #02a01c;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+/* Footer */
+footer {
+    background-color: #f5f5dcff; /* Beige background color */
+    padding: 20px 0; /* Adjust as needed */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-column {
+    width: 25%; /* Adjust the width as needed */
+}
+
+.logo-column img {
+    width: 80px; /* Adjust the size of the smaller logo */
+}
+
+.copywriting-column {
+    width: 70%; /* Adjust the width as needed */
+}
+
+.copywriting-column p {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #040a07; /* Text color */
+    text-align: center;
+}

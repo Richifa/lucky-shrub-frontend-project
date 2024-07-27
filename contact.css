@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    background-color: #3e8e41;
+    box-shadow: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.contact{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid ;
+    box-shadow: 0 0 10px rgba(144, 204, 152, 0.582);
+
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #3e8e41;
+}

@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    background-color: #4c6e3a;
+    color: white;
+    border-radius: 20px;
+    box-shadow: inset;
+}
+.gallery-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px; /* Adjust the horizontal gap between images */
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+
+.gallery-item img {
+    width: calc(50% - 8px); /* Adjust image width to accommodate gap */
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+    margin: 8px; /* Add equal space around each image */
+    gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+/* Add shadow and border on hover */
+.gallery-item img:hover {
+    transform: scale(1.05); /* Enlarge image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Optional: Center align images within gallery */
+.gallery-item img {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+    
+
+}
